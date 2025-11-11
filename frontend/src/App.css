@@ -1,0 +1,121 @@
+/* Estilos Globais e Tema */
+body {
+  background-color: #f4f7f9; /* Um cinza muito claro para o fundo */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Cabeçalho */
+.app-header {
+  background-color: #0056b3; /* Azul escuro, cor de saúde/governo */
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.app-header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+/* Card de Mapa Modernizado */
+.map-card-modern {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  overflow: hidden; /* Garante que o mapa não vaze dos cantos arredondados */
+}
+
+.map-card-modern .card-header {
+  background-color: #ffffff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Leaflet Container - Garante que o mapa não tenha bordas azuis de foco */
+.leaflet-container {
+  border-radius: 0 0 12px 12px;
+}
+.leaflet-container:focus {
+  outline: none;
+}
+
+
+/* Card de Localização Modernizado */
+.location-card-modern {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.location-card-modern:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.location-card-modern .card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.location-card-modern .card-header h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0056b3;
+}
+
+/* Destaque para 24 horas */
+.location-card-modern .card-header.bg-danger {
+  background-color: #dc3545 !important; /* Vermelho para emergência */
+}
+.location-card-modern .card-header.bg-danger h5 {
+  color: white;
+}
+
+
+.location-card-modern .card-body .card-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.location-card-modern .card-body .card-text strong {
+  color: #555;
+}
+
+/* Botões de Ação */
+.location-card-modern .btn {
+  font-weight: 600;
+  padding: 0.375rem 1rem;
+  border-radius: 20px; /* Botões arredondados */
+}
+
+.location-card-modern .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+/* Rodapé */
+.app-footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  background-color: #e9ecef;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .map-card-modern .card-body {
+    height: 400px !important;
+  }
+}
